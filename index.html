@@ -1,0 +1,140 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dreamscape Vibes ✨</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #2b0000, #4a0000, #1a0000);
+    color: white;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    max-width: 900px;
+    padding: 45px;
+    backdrop-filter: blur(18px);
+    background: rgba(255, 0, 0, 0.05);
+    border-radius: 25px;
+    box-shadow: 0 0 60px rgba(128, 0, 0, 0.4);
+    animation: fadeIn 2s ease;
+    border: 1px solid rgba(255, 100, 100, 0.2);
+}
+
+h1 {
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #7a0000, #ff4d6d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p {
+    font-size: 1.25rem;
+    line-height: 1.9;
+    margin-bottom: 30px;
+    color: #f5dcdc;
+}
+
+.username {
+    color: #ff4d6d;
+    font-weight: 600;
+}
+
+.btn {
+    padding: 13px 32px;
+    margin: 10px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    background: linear-gradient(45deg, #7a0000, #ff4d6d);
+    color: white;
+    box-shadow: 0 0 15px rgba(255, 77, 109, 0.4);
+}
+
+.btn:hover {
+    transform: scale(1.12);
+    box-shadow: 0 0 25px rgba(255, 77, 109, 0.8);
+}
+
+.particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.particles span {
+    position: absolute;
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: #ff4d6d;
+    animation: float 10s linear infinite;
+    opacity: 0.5;
+    border-radius: 50%;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(100vh) scale(0);
+    }
+    100% {
+        transform: translateY(-10vh) scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+</style>
+</head>
+<body><div class="particles">
+    <script>
+        for(let i=0;i<90;i++){
+            let span=document.createElement('span');
+            span.style.left=Math.random()*100+'%';
+            span.style.animationDuration=(5+Math.random()*5)+'s';
+            span.style.opacity=Math.random();
+            document.querySelector('.particles').appendChild(span);
+        }
+    </script>
+</div><div class="container">
+    <h1>🍷 Congratulations 🍷</h1>
+    <p>
+        To my amazing best friend 💖,<br><br>
+        I'm so proud of you for starting your journey with <span class="username">@dream._scapevibes</span> 🌙✨<br><br>
+        From the bottom of my heart, I wish you nothing but success, growth, and beautiful moments. May your page shine in its own unique way and touch thousands of hearts ❤️‍🔥<br><br>
+        Keep being original, keep being powerful, and never stop creating your vibe. This is just your beginning… and I already know you're going to make it BIG 🔥🍷
+    </p><button class="btn" onclick="showMessage()">Tap for Surprise 🎁</button>
+<button class="btn" onclick="visitInsta()">Visit Instagram 🚀</button>
+<p style="margin-top:20px; font-size:1rem; color:#ffb3b3; opacity:0.9;">
+    — From your bestfriend 💖
+</p>
+
+</div><script>
+    function showMessage(){
+        alert("Your vibe is rare, your future is powerful ❤️‍🔥🍷");
+    }
+
+    function visitInsta(){
+        window.open("https://instagram.com/dream._scapevibes", "_blank");
+    }
+</script></body>
+</html>
